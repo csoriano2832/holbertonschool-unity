@@ -8274,9 +8274,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8262121593593717308, guid: d9bc4f7fc5ab22d45a6885bb0bd30b4a, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262121593593717308, guid: d9bc4f7fc5ab22d45a6885bb0bd30b4a, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262121594351257802, guid: d9bc4f7fc5ab22d45a6885bb0bd30b4a, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262121594351257802, guid: d9bc4f7fc5ab22d45a6885bb0bd30b4a, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262121594423977168, guid: d9bc4f7fc5ab22d45a6885bb0bd30b4a, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262121594423977168, guid: d9bc4f7fc5ab22d45a6885bb0bd30b4a, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8262121594450071513, guid: d9bc4f7fc5ab22d45a6885bb0bd30b4a, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262121594450071513, guid: d9bc4f7fc5ab22d45a6885bb0bd30b4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8262121594450071517, guid: d9bc4f7fc5ab22d45a6885bb0bd30b4a, type: 3}
       propertyPath: m_Pivot.x

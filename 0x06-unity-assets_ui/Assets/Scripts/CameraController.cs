@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
     private Vector3 offset;
     private Quaternion currentRotation;
     private float sensitivity = 4.0f;
+    public bool isInverted;
 
     // Start is called before the first frame update
     void Start()

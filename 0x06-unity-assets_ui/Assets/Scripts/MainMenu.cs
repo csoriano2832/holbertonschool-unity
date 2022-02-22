@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     // Loads the options scene
     public void Options()
     {
+        PlayerPrefs.SetInt("Previous", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene("Options");
     }
 
