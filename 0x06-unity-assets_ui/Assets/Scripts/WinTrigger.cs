@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class WinTrigger : MonoBehaviour
 {
     public GameObject player;
-    public Text timerText;
+    public GameObject winCanvas;
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        player.GetComponent<Timer>().enabled = false;
-        timerText.color = Color.green;
-        timerText.fontSize = 60;
+        player.GetComponent<PlayerController>().enabled = false;
+        Camera.main.GetComponent<CameraController>().enabled = false;
+        winCanvas.SetActive(true);
+        //timerText.color = Color.green;
+        //timerText.fontSize = 60;
     }
 }

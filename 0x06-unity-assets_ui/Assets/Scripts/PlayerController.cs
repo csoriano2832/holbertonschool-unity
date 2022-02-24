@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private float playerSpeed = 5.0f;
     private float jumpHeight = 5.0f;
     private float gravityValue = -9.81f;
+    private float sensitivity = 150f;
 
     private void Start()
     {
@@ -19,7 +20,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Movement();
-        Rotate();
         FallOff();
     }
 
@@ -38,13 +38,9 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime, 0);
         move.y += gravityValue * Time.deltaTime;
         controller.Move(move * Time.deltaTime * playerSpeed);
-    }
-
-    void Rotate()
-    {
-        transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X") * 4f, 0));
     }
 
     void FallOff()

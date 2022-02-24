@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8262121593318485170}
   - component: {fileID: 8262121593318485181}
   - component: {fileID: 8262121593318485180}
+  - component: {fileID: 963412025}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -120,7 +121,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8262121593318485181}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963412025}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &963412025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8262121593318485182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf79d88f94ed5fc478fd3206af8e6a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 8262121594450071513}
+  mainCamera: {fileID: 0}
 --- !u!1 &8262121593593717310
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,8 +223,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Resume
 --- !u!1 &8262121593644328105
@@ -212,6 +239,7 @@ GameObject:
   - component: {fileID: 8262121593644328109}
   - component: {fileID: 8262121593644328108}
   - component: {fileID: 8262121593644328111}
+  - component: {fileID: 874868810}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -320,7 +348,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8262121593644328108}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 874868810}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &874868810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8262121593644328105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf79d88f94ed5fc478fd3206af8e6a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 8262121594450071513}
+  mainCamera: {fileID: 0}
 --- !u!1 &8262121593941442116
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,8 +566,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Restart
 --- !u!1 &8262121594356724411
@@ -670,8 +724,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Menu
 --- !u!1 &8262121594450071513
@@ -786,6 +840,7 @@ GameObject:
   - component: {fileID: 8262121594677492825}
   - component: {fileID: 8262121594677492824}
   - component: {fileID: 8262121594677492827}
+  - component: {fileID: 979479788}
   m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
@@ -894,7 +949,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8262121594677492824}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 979479788}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &979479788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8262121594677492773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf79d88f94ed5fc478fd3206af8e6a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 8262121594450071513}
+  mainCamera: {fileID: 0}
 --- !u!1 &8262121595203928524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,10 +1147,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4591547759250839759, guid: 0368c9560cd02c34eb40df577f2cd5c8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1826361200}
+    - target: {fileID: 4591547759250839759, guid: 0368c9560cd02c34eb40df577f2cd5c8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3017786738224843847, guid: 0368c9560cd02c34eb40df577f2cd5c8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0368c9560cd02c34eb40df577f2cd5c8, type: 3}
+--- !u!1 &5553087378084805121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4591547759250839757, guid: 0368c9560cd02c34eb40df577f2cd5c8, type: 3}
+  m_PrefabInstance: {fileID: 8262121593875997388}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5553087378084805122 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4591547759250839758, guid: 0368c9560cd02c34eb40df577f2cd5c8, type: 3}
   m_PrefabInstance: {fileID: 8262121593875997388}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1826361200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5553087378084805121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf79d88f94ed5fc478fd3206af8e6a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 8262121594450071513}
+  mainCamera: {fileID: 0}

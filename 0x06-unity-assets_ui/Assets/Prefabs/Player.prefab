@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5226625512892701533}
   - component: {fileID: 8663195776463159009}
   - component: {fileID: 5425052364962047152}
+  - component: {fileID: 211115017}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -137,9 +138,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392288921835419680}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bef47044eca56fb46b8bb77eec0dc383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
+  finalTime: {fileID: 0}
+  winCanvas: {fileID: 0}
+--- !u!114 &211115017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392288921835419680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf79d88f94ed5fc478fd3206af8e6a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  mainCamera: {fileID: 0}
