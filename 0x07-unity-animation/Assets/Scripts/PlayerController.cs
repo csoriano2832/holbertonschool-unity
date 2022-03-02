@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime, 0);
+        transform.Rotate(0, Input.GetAxis("Horizontal") * sensitivity * Time.deltaTime, 0);
         move.y += gravityValue * Time.deltaTime;
         controller.Move(move * Time.deltaTime * playerSpeed);
     }

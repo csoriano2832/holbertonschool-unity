@@ -28,7 +28,7 @@ public class CameraController : MonoBehaviour
     private void Update()
     {
         currentX += Input.GetAxis("Mouse X") * sensivityX * Time.deltaTime;
-        currentY += Input.GetAxis("Mouse Y") * (isInverted ? -1 : 1) * sensivityY * Time.deltaTime;
+        currentY += Input.GetAxis("Mouse Y") * (isInverted ? 1 : -1) * sensivityY * Time.deltaTime;
         currentY = Mathf.Clamp(currentY, Y_MIN, Y_MAX);
     }
     
