@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
+    public Animator anim;
     private Vector3 move;
     private bool groundedPlayer;
     private float playerSpeed = 5.0f;
@@ -28,6 +29,14 @@ public class PlayerController : MonoBehaviour
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer)
         {
+            if (Input.GetKey("w") | Input.GetKey("a") | Input.GetKey("s") | Input.GetKey("d"))
+            {
+                anim.SetBool("isRunning", true);
+            }
+            else
+            {
+                anim.SetBool("isRunning", false);
+            }
             move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             move = transform.rotation * move;
         
@@ -38,7 +47,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        transform.Rotate(0, Input.GetAxis("Horizontal") * sensitivity * Time.deltaTime, 0);
+        transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime, 0);
         move.y += gravityValue * Time.deltaTime;
         controller.Move(move * Time.deltaTime * playerSpeed);
     }
