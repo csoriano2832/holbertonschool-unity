@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
             // Changes the height position of the player..
             if (Input.GetButtonDown("Jump"))
             {
+                anim.SetTrigger("Jump");
+                //anim.ResetTrigger("Jump");
                 move.y = jumpHeight;
             }
         }

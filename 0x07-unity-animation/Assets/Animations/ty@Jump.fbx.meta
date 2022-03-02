@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 21337cd1114cca044999d1bb5e3fe3f2
+guid: 750442d6778963f43bef5e6a7c7cc01f
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Running
+    second: Jump
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -35,19 +35,19 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Running
+      name: Jump
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 21
+      lastFrame: 39
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 1
@@ -526,65 +526,65 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: ty@Running(Clone)
+    - name: ty@Jump(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:Hips
-      parentName: ty@Running(Clone)
-      position: {x: -0.0011926742, y: 0.83594996, z: 0.0125400275}
-      rotation: {x: 0.04667092, y: -0.027636353, z: 0.031041203, w: 0.9980454}
+      parentName: ty@Jump(Clone)
+      position: {x: 0.0017649335, y: 0.8276526, z: 0.014968707}
+      rotation: {x: -0.06667432, y: -0.08949275, z: -0.039903343, w: 0.99295187}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:Spine
       parentName: Boy:Hips
       position: {x: -0, y: 0.07722, z: 0.011662}
-      rotation: {x: 0.043037955, y: -0.010713585, z: -0.018633552, w: 0.99884224}
+      rotation: {x: 0.1295994, y: 0.10399835, z: 0.029244414, w: 0.98566383}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:Spine1
       parentName: Boy:Spine
       position: {x: -0, y: 0.09600099, z: 0.0024879999}
-      rotation: {x: 0.08624404, y: -0.023050549, z: -0.01706676, w: 0.9958612}
+      rotation: {x: 0.0099834055, y: 0.026492884, z: 0.0065310323, w: 0.9995778}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:Spine2
       parentName: Boy:Spine1
       position: {x: -0, y: 0.110378, z: -0.0049119997}
-      rotation: {x: 0.08624413, y: -0.023050586, z: -0.017066756, w: 0.9958611}
+      rotation: {x: 0.0102880355, y: 0.026143497, z: 0.006357022, w: 0.99958503}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftShoulder
       parentName: Boy:Spine2
       position: {x: -0.042157996, y: 0.16554399, z: -0.040647}
-      rotation: {x: 0.010442008, y: 0.01706968, z: 0.06805435, w: 0.997481}
+      rotation: {x: 0.0140527, y: 0.08983069, z: 0.15128687, w: 0.98429936}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftArm
       parentName: Boy:LeftShoulder
       position: {x: -0.053007, y: 0.006632, z: -0.017093001}
-      rotation: {x: 0.115666084, y: 0.04822574, z: -0.048463717, w: 0.9909324}
+      rotation: {x: -0.16651097, y: -0.07531563, z: -0.18743901, w: 0.96512604}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftForeArm
       parentName: Boy:LeftArm
       position: {x: -0.217693, y: -0.00634, z: -0.020411}
-      rotation: {x: -0.030722, y: -0.025255099, z: -0.0010846017, w: 0.9992083}
+      rotation: {x: -0.1361999, y: -0.035211552, z: -0.010243361, w: 0.9900024}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHand
       parentName: Boy:LeftForeArm
       position: {x: -0.238458, y: -0.00085199997, z: -0.0087089995}
-      rotation: {x: 0.16059765, y: 0.16086344, z: -0.026791438, w: 0.9734544}
+      rotation: {x: 0.34767294, y: 0.12550914, z: -0.063768536, w: 0.9269869}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandThumb1
       parentName: Boy:LeftHand
       position: {x: -0.044018, y: -0.015914, z: 0.033656}
-      rotation: {x: -0.26810998, y: 0.0048916466, z: -0.29150468, w: 0.9182147}
+      rotation: {x: -0.18875697, y: 0.036694437, z: -0.14524575, w: 0.9705298}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandThumb2
       parentName: Boy:LeftHandThumb1
       position: {x: -0.030167, y: -0.01562, z: 0.021189999}
-      rotation: {x: -0.04578694, y: 0.04068547, z: -0.05834186, w: 0.99641585}
+      rotation: {x: -0.017258834, y: 0.06484455, z: -0.06538832, w: 0.99560124}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandThumb3
       parentName: Boy:LeftHandThumb2
       position: {x: -0.030295998, y: -0.020998001, z: 0.014157999}
-      rotation: {x: -0.040561322, y: 0.063719414, z: 0.007708256, w: 0.99711347}
+      rotation: {x: -0.07989306, y: 0.07057072, z: 0.0066254204, w: 0.9942802}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandThumb4
       parentName: Boy:LeftHandThumb3
@@ -594,17 +594,17 @@ ModelImporter:
     - name: Boy:LeftHandIndex1
       parentName: Boy:LeftHand
       position: {x: -0.12180299, y: -0.0013209999, z: 0.036992}
-      rotation: {x: -0.00672486, y: 0.031154986, z: -0.035522748, w: 0.9988605}
+      rotation: {x: -0.05723699, y: 0.02133639, z: -0.028273232, w: 0.99773216}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandIndex2
       parentName: Boy:LeftHandIndex1
       position: {x: -0.032291997, y: -0.005749, z: -0.001435}
-      rotation: {x: -0.02078823, y: 0.01716656, z: -0.081906155, w: 0.9962753}
+      rotation: {x: -0.0012687328, y: 0.021942176, z: -0.06945339, w: 0.9973431}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandIndex3
       parentName: Boy:LeftHandIndex2
       position: {x: -0.031112, y: -0.011356, z: -0.0028080002}
-      rotation: {x: 0.010165536, y: -0.005979643, z: -0.08844849, w: 0.99601096}
+      rotation: {x: 0.0073578134, y: -0.0049323794, z: -0.060604867, w: 0.9981225}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandIndex4
       parentName: Boy:LeftHandIndex3
@@ -614,17 +614,17 @@ ModelImporter:
     - name: Boy:LeftHandMiddle1
       parentName: Boy:LeftHand
       position: {x: -0.121351995, y: -0.000306, z: -0.000982}
-      rotation: {x: -0.019729441, y: 0.03353965, z: -0.0788809, w: 0.99612427}
+      rotation: {x: -0.056731574, y: 0.02282649, z: -0.07114125, w: 0.99559}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandMiddle2
       parentName: Boy:LeftHandMiddle1
       position: {x: -0.032909, y: -0.008755, z: -0.001869}
-      rotation: {x: -0.009308105, y: 0.013152078, z: -0.03977646, w: 0.9990787}
+      rotation: {x: -0.0018887853, y: 0.013907565, z: -0.035483073, w: 0.99927175}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandMiddle3
       parentName: Boy:LeftHandMiddle2
       position: {x: -0.030945, y: -0.011502, z: -0.002676}
-      rotation: {x: 0.007904153, y: -0.012793822, z: -0.036412463, w: 0.9992237}
+      rotation: {x: 0.0061817225, y: -0.012002319, z: -0.016937904, w: 0.99976546}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandMiddle4
       parentName: Boy:LeftHandMiddle3
@@ -634,17 +634,17 @@ ModelImporter:
     - name: Boy:LeftHandRing1
       parentName: Boy:LeftHand
       position: {x: -0.123049, y: -0.00401, z: -0.030701}
-      rotation: {x: -0.065674335, y: 0.023249779, z: -0.116757475, w: 0.99071395}
+      rotation: {x: -0.086259045, y: 0.018818583, z: -0.1136549, w: 0.9895897}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandRing2
       parentName: Boy:LeftHandRing1
       position: {x: -0.028812999, y: -0.0099289995, z: -0.001869}
-      rotation: {x: 0.0037565734, y: 0.017917497, z: -0.02636001, w: 0.9994849}
+      rotation: {x: -0.0033739128, y: 0.013955213, z: -0.024637358, w: 0.9995933}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandRing3
       parentName: Boy:LeftHandRing2
       position: {x: -0.030227, y: -0.01281, z: -0.00291}
-      rotation: {x: 0.003320344, y: -0.0037942259, z: -0.017787142, w: 0.9998291}
+      rotation: {x: 0.0007510339, y: -0.003015196, z: 0.0064429115, w: 0.9999744}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandRing4
       parentName: Boy:LeftHandRing3
@@ -654,17 +654,17 @@ ModelImporter:
     - name: Boy:LeftHandPinky1
       parentName: Boy:LeftHand
       position: {x: -0.113373004, y: -0.016896, z: -0.056255996}
-      rotation: {x: -0.11595882, y: 0.038687453, z: -0.12697102, w: 0.9843451}
+      rotation: {x: -0.07120742, y: 0.047076095, z: -0.121010184, w: 0.98897415}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandPinky2
       parentName: Boy:LeftHandPinky1
       position: {x: -0.026789999, y: -0.009501, z: -0.0033059998}
-      rotation: {x: 0.044656757, y: 0.0012832052, z: 0.027985515, w: 0.99860954}
+      rotation: {x: 0.0013905163, y: -0.013352803, z: 0.028176544, w: 0.99951285}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandPinky3
       parentName: Boy:LeftHandPinky2
       position: {x: -0.027246, y: -0.008436, z: -0.002527}
-      rotation: {x: 0.0051037846, y: -0.011122111, z: -0.017899277, w: 0.9997649}
+      rotation: {x: 0.0039214734, y: -0.010561495, z: -0.005488978, w: 0.99992156}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftHandPinky4
       parentName: Boy:LeftHandPinky3
@@ -674,37 +674,37 @@ ModelImporter:
     - name: Boy:RightShoulder
       parentName: Boy:Spine2
       position: {x: 0.042157996, y: 0.16554399, z: -0.040647}
-      rotation: {x: 0.010501336, y: -0.05219172, z: -0.0713113, w: 0.99603236}
+      rotation: {x: 0.009723945, y: -0.057148322, z: -0.08639078, w: 0.9945734}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightArm
       parentName: Boy:RightShoulder
       position: {x: 0.053007, y: 0.006632, z: -0.017093001}
-      rotation: {x: 0.05664521, y: 0.0397989, z: 0.07849862, w: 0.99450755}
+      rotation: {x: 0.32515457, y: -0.02219868, z: 0.06693926, w: 0.9430275}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightForeArm
       parentName: Boy:RightArm
       position: {x: 0.217693, y: -0.00634, z: -0.020411}
-      rotation: {x: -0.10029011, y: 0.023185378, z: 0.010773864, w: 0.9946297}
+      rotation: {x: -0.07139852, y: 0.011255203, z: 0.0040859734, w: 0.997376}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHand
       parentName: Boy:RightForeArm
       position: {x: 0.238458, y: -0.00085199997, z: -0.0087089995}
-      rotation: {x: 0.07293633, y: -0.033562966, z: -0.019632298, w: 0.9965784}
+      rotation: {x: 0.20302425, y: -0.108495854, z: 0.16105957, w: 0.9597237}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandThumb1
       parentName: Boy:RightHand
       position: {x: 0.044018, y: -0.015914, z: 0.033656}
-      rotation: {x: -0.17964813, y: -0.0524643, z: 0.18583629, w: 0.96459264}
+      rotation: {x: -0.20677185, y: 0.06886345, z: 0.40764284, w: 0.8867528}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandThumb2
       parentName: Boy:RightHandThumb1
       position: {x: 0.030167, y: -0.01562, z: 0.021189999}
-      rotation: {x: -0.046882175, y: -0.038676906, z: 0.058428768, w: 0.99643975}
+      rotation: {x: -0.10255056, y: -0.017451044, z: 0.012484724, w: 0.9944964}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandThumb3
       parentName: Boy:RightHandThumb2
       position: {x: 0.030295998, y: -0.020998001, z: 0.014157999}
-      rotation: {x: -0.0405613, y: -0.063719325, z: -0.0077082664, w: 0.99711347}
+      rotation: {x: 0.0055738534, y: -0.122041985, z: 0.035701264, w: 0.99186707}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandThumb4
       parentName: Boy:RightHandThumb3
@@ -714,17 +714,17 @@ ModelImporter:
     - name: Boy:RightHandIndex1
       parentName: Boy:RightHand
       position: {x: 0.12180299, y: -0.0013209999, z: 0.036992}
-      rotation: {x: 0.04959695, y: -0.0321509, z: 0.030681241, w: 0.9977801}
+      rotation: {x: -0.02949725, y: -0.053960767, z: 0.024372097, w: 0.99780977}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandIndex2
       parentName: Boy:RightHandIndex1
       position: {x: 0.032291997, y: -0.005749, z: -0.001435}
-      rotation: {x: -0.021105876, y: -0.016320571, z: 0.08445919, w: 0.9960697}
+      rotation: {x: -0.00069423375, y: -0.02176973, z: 0.077352926, w: 0.99676585}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandIndex3
       parentName: Boy:RightHandIndex2
       position: {x: 0.031112, y: -0.011356, z: -0.0028080002}
-      rotation: {x: 0.010165384, y: 0.0059796376, z: 0.08844858, w: 0.99601096}
+      rotation: {x: 0.0068996316, y: 0.0042911717, z: 0.058713958, w: 0.99824184}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandIndex4
       parentName: Boy:RightHandIndex3
@@ -734,17 +734,17 @@ ModelImporter:
     - name: Boy:RightHandMiddle1
       parentName: Boy:RightHand
       position: {x: 0.121351995, y: -0.000306, z: -0.000982}
-      rotation: {x: -0.007073981, y: -0.03363038, z: 0.07660294, w: 0.99646926}
+      rotation: {x: -0.05151296, y: -0.029881276, z: 0.06475702, w: 0.9961225}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandMiddle2
       parentName: Boy:RightHandMiddle1
       position: {x: 0.032909, y: -0.008755, z: -0.001869}
-      rotation: {x: -0.007997593, y: -0.012722545, z: 0.04220862, w: 0.99899584}
+      rotation: {x: -0.0021882202, y: -0.014301287, z: 0.033049326, w: 0.999349}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandMiddle3
       parentName: Boy:RightHandMiddle2
       position: {x: 0.030945, y: -0.011502, z: -0.002676}
-      rotation: {x: 0.007904259, y: 0.012793834, z: 0.03641237, w: 0.9992237}
+      rotation: {x: 0.0051593725, y: 0.011083156, z: 0.007973332, w: 0.99989355}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandMiddle4
       parentName: Boy:RightHandMiddle3
@@ -754,17 +754,17 @@ ModelImporter:
     - name: Boy:RightHandRing1
       parentName: Boy:RightHand
       position: {x: 0.123049, y: -0.00401, z: -0.030701}
-      rotation: {x: -0.0548272, y: -0.025772875, z: 0.11650363, w: 0.9913408}
+      rotation: {x: -0.047879934, y: -0.029667346, z: 0.10157974, w: 0.99323153}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandRing2
       parentName: Boy:RightHandRing1
       position: {x: 0.028812999, y: -0.0099289995, z: -0.001869}
-      rotation: {x: 0.0019985875, y: -0.016691217, z: 0.029095031, w: 0.9994353}
+      rotation: {x: -0.003476518, y: -0.014158902, z: 0.024341369, w: 0.9995974}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandRing3
       parentName: Boy:RightHandRing2
       position: {x: 0.030227, y: -0.01281, z: -0.00291}
-      rotation: {x: 0.0033203377, y: 0.0037941684, z: 0.017787183, w: 0.9998291}
+      rotation: {x: -0.00018473684, y: 0.0022213499, z: -0.012789267, w: 0.9999157}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandRing4
       parentName: Boy:RightHandRing3
@@ -774,17 +774,17 @@ ModelImporter:
     - name: Boy:RightHandPinky1
       parentName: Boy:RightHand
       position: {x: 0.113373004, y: -0.016896, z: -0.056255996}
-      rotation: {x: -0.108370386, y: -0.04168825, z: 0.12972094, w: 0.98472863}
+      rotation: {x: -0.04275774, y: -0.055148397, z: 0.108485915, w: 0.9916457}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandPinky2
       parentName: Boy:RightHandPinky1
       position: {x: 0.026789999, y: -0.009501, z: -0.0033059998}
-      rotation: {x: 0.044168092, y: -0.00048191077, z: -0.025340851, w: 0.9987026}
+      rotation: {x: 0.000042419877, y: 0.012601173, z: -0.03835683, w: 0.99918467}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandPinky3
       parentName: Boy:RightHandPinky2
       position: {x: 0.027246, y: -0.008436, z: -0.002527}
-      rotation: {x: 0.005103788, y: 0.011122179, z: 0.017899344, w: 0.9997649}
+      rotation: {x: 0.0022181752, y: 0.009274573, z: -0.010420531, w: 0.9999003}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightHandPinky4
       parentName: Boy:RightHandPinky3
@@ -794,12 +794,12 @@ ModelImporter:
     - name: Boy:Neck
       parentName: Boy:Spine2
       position: {x: -0, y: 0.216843, z: -0.031231}
-      rotation: {x: -0.021765, y: 0.009217399, z: 0.0006640999, w: 0.99972045}
+      rotation: {x: -0.06467982, y: -0.014171658, z: 0.012825339, w: 0.99772304}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:Head
       parentName: Boy:Neck
       position: {x: -0, y: 0.089138, z: 0.0103400005}
-      rotation: {x: -0.02176491, y: 0.009217404, z: 0.0006640865, w: 0.99972045}
+      rotation: {x: -0.06450911, y: -0.01506451, z: 0.011162271, w: 0.997741}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:HeadTop_End
       parentName: Boy:Head
@@ -809,17 +809,17 @@ ModelImporter:
     - name: Boy:LeftUpLeg
       parentName: Boy:Hips
       position: {x: -0.08267, y: -0.047954995, z: -0.0037909998}
-      rotation: {x: -0.03724882, y: -0.0630009, z: -0.03460277, w: 0.9967177}
+      rotation: {x: -0.04727549, y: 0.015803363, z: 0.02652644, w: 0.9984045}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftLeg
       parentName: Boy:LeftUpLeg
       position: {x: -0.00409, y: -0.33779702, z: 0.001115}
-      rotation: {x: 0.27267948, y: -0.06651, z: -0.06045461, w: 0.9578975}
+      rotation: {x: 0.30651447, y: 0.07490162, z: -0.000067605164, w: 0.94891447}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftFoot
       parentName: Boy:LeftLeg
       position: {x: -0.0051410003, y: -0.33176798, z: -0.022846}
-      rotation: {x: 0.110480696, y: 0.30366918, z: -0.18842246, w: 0.9274029}
+      rotation: {x: -0.374605, y: -0.00090456, z: 0.022861278, w: 0.92690223}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:LeftToeBase
       parentName: Boy:LeftFoot
@@ -829,17 +829,17 @@ ModelImporter:
     - name: Boy:RightUpLeg
       parentName: Boy:Hips
       position: {x: 0.08267, y: -0.047954995, z: -0.0037909998}
-      rotation: {x: -0.045934778, y: 0.041538693, z: -0.032081954, w: 0.99756473}
+      rotation: {x: -0.029495941, y: 0.17124523, z: 0.07491087, w: 0.98193353}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightLeg
       parentName: Boy:RightUpLeg
       position: {x: 0.00409, y: -0.33779702, z: 0.001115}
-      rotation: {x: 0.30813742, y: -0.006437237, z: 0.022086905, w: 0.95106363}
+      rotation: {x: 0.25753152, y: -0.03719116, z: 0.008306282, w: 0.9655182}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightFoot
       parentName: Boy:RightLeg
       position: {x: 0.0051410003, y: -0.33176798, z: -0.022846}
-      rotation: {x: -0.24277976, y: -0.009311177, z: -0.016468365, w: 0.96989703}
+      rotation: {x: 0.108938605, y: -0.23393235, z: 0.20774952, w: 0.94352967}
       scale: {x: 1, y: 1, z: 1}
     - name: Boy:RightToeBase
       parentName: Boy:RightFoot
