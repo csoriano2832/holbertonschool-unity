@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {        
         if(controller.isGrounded) {
+            anim.SetBool("isFalling", false);
             _playerVelocity.y = _gravityValue * Time.deltaTime;
         }
 
@@ -70,6 +71,7 @@ public class PlayerController : MonoBehaviour
     void FallOff()
     {
         if (transform.position.y <= -25) {
+            anim.SetBool("isFalling", true);
             transform.position = new Vector3(0, 75, 0);
         }
     }
