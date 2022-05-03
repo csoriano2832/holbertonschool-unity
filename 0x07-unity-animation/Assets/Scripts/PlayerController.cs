@@ -4,60 +4,72 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // Components
     public CharacterController controller;
-    public Animator anim;
-    private Vector3 move;
-    private bool groundedPlayer;
-    private float playerSpeed = 5.0f;
-    private float jumpHeight = 5.0f;
-    private float gravityValue = -9.81f;
-    private float sensitivity = 150f;
+    public Transform cam;
+    public Animator anim;                             
+    
+    //Character movement and rotation
+    public float speed = 6f;
+    private float _turnSmoothTime = 0.1f;
+    private float _turnSmoothVelocity;
+    
+    //Jump mechanic
+    public float jumpHeight = 2f;
+    private Vector3 _playerVelocity;
+    private float _gravityValue = -9.81f;
+    
 
-    private void Start()
-    {
-
-    }
-
-    void Update()
+    void FixedUpdate()
     {
         Movement();
+        Jump();
         FallOff();
     }
 
     void Movement()
     {
-        groundedPlayer = controller.isGrounded;
-        if (groundedPlayer)
-        {
-            if (Input.GetKey("w") | Input.GetKey("a") | Input.GetKey("s") | Input.GetKey("d"))
-            {
-                anim.SetBool("isRunning", true);
-            }
-            else
-            {
-                anim.SetBool("isRunning", false);
-            }
-            move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            move = transform.rotation * move;
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
         
-            // Changes the height position of the player..
-            if (Input.GetButtonDown("Jump"))
-            {
-                anim.SetTrigger("Jump");
-                //anim.ResetTrigger("Jump");
-                move.y = jumpHeight;
-            }
+        if (Input.GetKey("w") | Input.GetKey("a") | Input.GetKey("s") | Input.GetKey("d")) {
+            anim.SetBool("isRunning", true);
+        }
+        else {
+            anim.SetBool("isRunning", false);
         }
 
-        transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime, 0);
-        move.y += gravityValue * Time.deltaTime;
-        controller.Move(move * Time.deltaTime * playerSpeed);
+        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+
+        if (direction.magnitude >= 0.1f)
+        {
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothVelocity, _turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            controller.Move(moveDir.normalized * speed * Time.deltaTime);
+        }
+    }
+
+    void Jump()
+    {        
+        if(controller.isGrounded) {
+            _playerVelocity.y = _gravityValue * Time.deltaTime;
+        }
+
+        if(Input.GetButton("Jump") && controller.isGrounded) {
+            anim.SetTrigger("Jump");
+            _playerVelocity.y += Mathf.Sqrt(jumpHeight * -1f * _gravityValue);
+        }
+
+        _playerVelocity.y += _gravityValue * Time.deltaTime;
+        controller.Move(_playerVelocity * Time.deltaTime);
     }
 
     void FallOff()
     {
-        if (transform.position.y <= -25)
-        {
+        if (transform.position.y <= -25) {
             transform.position = new Vector3(0, 75, 0);
         }
     }
