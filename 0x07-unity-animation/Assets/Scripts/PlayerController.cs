@@ -56,11 +56,13 @@ public class PlayerController : MonoBehaviour
     {        
         if(controller.isGrounded) {
             anim.SetBool("isFalling", false);
+            anim.SetBool("isGrounded", true);
             _playerVelocity.y = _gravityValue * Time.deltaTime;
         }
 
         if(Input.GetButton("Jump") && controller.isGrounded) {
             anim.SetTrigger("Jump");
+            anim.SetBool("isGrounded", false);
             _playerVelocity.y += Mathf.Sqrt(jumpHeight * -1f * _gravityValue);
         }
 
