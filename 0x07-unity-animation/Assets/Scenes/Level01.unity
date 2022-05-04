@@ -2986,6 +2986,7 @@ MonoBehaviour:
   mainCamera: {fileID: 963194225}
   player: {fileID: 211115009}
   timerCanvas: {fileID: 149478358}
+  anim: {fileID: 729587045}
 --- !u!1001 &754032259
 PrefabInstance:
   m_ObjectHideFlags: 0
