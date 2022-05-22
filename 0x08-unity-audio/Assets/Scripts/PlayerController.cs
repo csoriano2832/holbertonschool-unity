@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     // Components
     public CharacterController controller;
     public Transform cam;
-    public Animator anim;                             
+    public Animator anim;
     
     //Character movement and rotation
     public float speed = 6f;
@@ -18,9 +18,12 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight = 2f;
     private Vector3 _playerVelocity;
     private float _gravityValue = -9.81f;
-    
 
-    void FixedUpdate()
+    //Animation variables
+    private AnimatorClipInfo[] m_CurrentClipInfo;
+    private string m_ClipName;
+
+    void Update()
     {
         Movement();
         Jump();
@@ -72,9 +75,20 @@ public class PlayerController : MonoBehaviour
 
     void FallOff()
     {
+        m_CurrentClipInfo = anim.GetCurrentAnimatorClipInfo(0);
+        m_ClipName = m_CurrentClipInfo[0].clip.name;
+
         if (transform.position.y <= -25) {
             anim.SetBool("isFalling", true);
             transform.position = new Vector3(0, 75, 0);
+        }
+
+        if (m_ClipName == "Falling" | m_ClipName == "Falling Flat Impact" | m_ClipName == "Getting Up") {
+            speed = 0f;
+            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        }
+        else {
+            speed = 6f;
         }
     }
 }

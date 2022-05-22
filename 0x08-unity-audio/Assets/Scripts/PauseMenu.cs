@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject mainCamera;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-    
-    }
+    public AudioMixerSnapshot paused;
+    public AudioMixerSnapshot unpaused;
 
     // Update is called once per frame
     void Update()
@@ -20,14 +15,16 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (!pauseMenu.activeInHierarchy)
-            {
                 Pause();
-            }
             else if (pauseMenu.activeInHierarchy)
-            {
                 Resume();
-            }
+
         }
+        
+        if (Time.timeScale == 1)
+            unpaused.TransitionTo(0f);
+        else
+            paused.TransitionTo(0f);
     }
 
     // Pauses the game
