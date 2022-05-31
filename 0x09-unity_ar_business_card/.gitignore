@@ -9,9 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
-/QCAR
-/Assets/Editor/Vuforia
-/Assets/Animations
+/Packages/com.*
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
